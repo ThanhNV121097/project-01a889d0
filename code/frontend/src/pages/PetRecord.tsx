@@ -53,7 +53,7 @@ function PetBody() {
           <T k="pet.back.label" />
         </Link>
         <div className="mt-4 flex items-start gap-5">
-          <Picture src={pet.image} alt={pet.name} caption={`A photograph of ${pet.name}`} className="h-20 w-20 shrink-0 rounded-[var(--radius)] object-cover" />
+          <Picture src={pet.image} alt={pet.name} caption={`A photograph of ${pet.name}`} className="h-28 w-28 shrink-0 rounded-[var(--radius)] object-cover sm:h-32 sm:w-32" />
           <div className="min-w-0">
             <h1 className="text-[length:var(--size-h1)] text-ink">{pet.name}</h1>
             <p className="mt-1 text-ink-soft">
