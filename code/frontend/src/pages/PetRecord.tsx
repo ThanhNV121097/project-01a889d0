@@ -76,7 +76,7 @@ function PetBody() {
             >
               <T k="pet.nextDue" className="block text-[length:var(--size-label)] uppercase tracking-[var(--tracking-label)] text-ink-soft" />
               <p className="mt-2 font-display text-2xl text-ink">{due.vaccine}</p>
-              <p className="mt-1 font-display tabular-nums text-[length:var(--size-figure)] text-ink">{formatDate(due.due, "medium")}</p>
+              <p className="mt-1 font-display tabular-nums text-[length:var(--size-figure)] text-ink">{formatDate(due.due)}</p>
               {late && (
                 <Flag tone="alert" className="mt-3">
                   <T k="pet.overdue" />
