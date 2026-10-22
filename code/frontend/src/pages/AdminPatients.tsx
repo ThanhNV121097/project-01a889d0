@@ -28,6 +28,7 @@ function Body() {
   const [search, setSearch] = useState("");
   const [overdueOnly, setOverdueOnly] = useState(false);
   const [editing, setEditing] = useState<Pet | null>(null);
+  const [showForm, setShowForm] = useState(false);
   const [draft, setDraft] = useState(BLANK);
   const columns = useContent<{ pet: string; species: string; breed: string; born: string; weight: string; owner: string; due: string }>("admin.patients.columns");
 
