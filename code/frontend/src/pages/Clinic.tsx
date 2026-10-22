@@ -42,19 +42,27 @@ export default function Clinic() {
         </div>
       </Section>
 
-      {written.length > 0 && (
-        <Section labelKey="clinic.says.label" className="border-t border-line">
-          <T k="clinic.says.heading" as="h2" className="text-[length:var(--size-h2)] text-ink" />
-          <ul className="mt-5 border-t border-line">
-            {written.map((t) => (
-              <li key={t.id} data-record={`testimonials:${t.id}`} className="border-b border-line py-5">
-                <p className="max-w-[62ch] text-ink">{t.quote}</p>
-                <p className="mt-2 text-sm text-ink-soft">{t.who}</p>
-              </li>
-            ))}
-          </ul>
-        </Section>
-      )}
+      <Section labelKey="clinic.says.label" className="border-t border-line">
+        <T k="clinic.says.heading" as="h2" className="text-[length:var(--size-h2)] text-ink" />
+        {!anyWritten && <T k="clinic.says.empty" as="p" className="mt-3 max-w-[52ch] text-ink-soft" />}
+        <ul className="mt-5 border-t border-line" data-testid="owners-say">
+          {(anyWritten ? written : says).map((t) => (
+            <li key={t.id} data-record={`testimonials:${t.id}`} className="border-b border-line py-5">
+              {t.quote.trim() ? (
+                <>
+                  <p className="max-w-[62ch] text-ink">{t.quote}</p>
+                  <p className="mt-2 text-sm text-ink-soft">{t.who}</p>
+                </>
+              ) : (
+                <p className="grid max-w-[62ch] grid-cols-[20px_1fr] items-start gap-3 text-sm text-ink-soft">
+                  <Icon name="quote" size={20} />
+                  <T k="clinic.says.waiting" />
+                </p>
+              )}
+            </li>
+          ))}
+        </ul>
+      </Section>
 
       <img src="/images/ear-check.jpg" alt={alt.cat} className="h-[320px] w-full object-cover lg:h-[420px]" width={1280} height={853} />
     </>
