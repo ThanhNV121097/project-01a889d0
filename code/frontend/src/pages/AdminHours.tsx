@@ -32,6 +32,7 @@ function Body() {
         <Icon name="hours" size={16} />
         <T k="contact.hours" />
       </p>
+      <img src="/images/puppy-check.jpg" alt="The consulting room at Bốn Chân" className="mt-[var(--space-8)] h-[220px] w-full rounded-[var(--radius)] object-cover" width={1280} height={914} />
       <div className="mt-[var(--space-8)] flex flex-col gap-[var(--space-8)]">
         {vets.map((v) => (
           <div key={v.id} data-record={`vets:${v.id}`}>
