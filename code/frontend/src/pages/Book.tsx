@@ -99,7 +99,7 @@ export default function Book() {
                   <T k="book.pick" as="p" className="text-ink-soft" />
                 ) : (
                   <>
-                    <SlotPicker slots={slots} value={slot} onPick={setSlot} />
+                    <SlotPicker slots={slots} value={slot} onPick={(s) => setSlot(s.id)} />
                     {service.halfDay && <T k="book.halfDay" as="p" className="mt-3 text-sm text-ink-soft" />}
                   </>
                 )}
