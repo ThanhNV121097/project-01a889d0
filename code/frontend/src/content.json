@@ -176,7 +176,7 @@
       "empty": "We have not collected these yet.",
       "waiting": "A place for an owner's own words. Three are waiting to be filled in."
     },
-    "alt": { "cat": "A cat waiting to be seen", "room": "A dog being comforted in the consulting room" }
+    "alt": { "ear": "A dog's ear being looked into during an examination", "room": "A dog being comforted in the consulting room" }
   },
   "contact": {
     "title": "Contact",
