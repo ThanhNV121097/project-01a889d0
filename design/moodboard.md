@@ -83,13 +83,3 @@ marquee, nothing pinned.
 7. An overdue vaccination is the row's own state — a left rule in the alert
    token with the word "Overdue" set in it — not a coloured dot beside normal
    text.
-
-## Crit notes
-
-- Round 1: the hero panel held only the services; the two vets and their days
-  were below the fold, so an owner could not see that Dr Quân has no Thursday
-  before choosing a day. The vets moved into the panel beside the services.
-- Round 2: the account's pets were a card grid that left a hole at three
-  items; they are full-width rows in the site's own table language instead.
-- Pictures: the clinic has none of its own. Every photograph on the site is a
-  licensed stand-in, listed in the pull request for the owner to replace.
