@@ -55,7 +55,7 @@ export default function Clinic() {
         </Section>
       )}
 
-      <img src="/images/cat-portrait.jpg" alt={alt.cat} className="h-[320px] w-full object-cover lg:h-[420px]" width={861} height={1280} />
+      <img src="/images/ear-check.jpg" alt={alt.cat} className="h-[320px] w-full object-cover lg:h-[420px]" width={1280} height={853} />
     </>
   );
 }
