@@ -55,6 +55,7 @@ function Header() {
   const [open, setOpen] = useState(false);
   const session = useSession();
   const cta = useContent<{ label: string; href: string }>("nav.cta");
+  const name = useContent("site.name");
   const close = () => setOpen(false);
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-ground/95 backdrop-blur">
