@@ -30,7 +30,7 @@ export default function Home() {
           <img src="/images/exam-room.jpg" alt={alt.left} className="h-full w-full object-cover" width={1280} height={1024} />
           <img src="/images/puppy-check.jpg" alt={alt.right} className="h-full w-full object-cover" width={1280} height={914} />
         </div>
-        <motion.div {...settle} className="mx-auto -mt-16 max-w-page px-[var(--gutter)]">
+        <div className="load-settle mx-auto -mt-16 max-w-page px-[var(--gutter)]">
           <div className="rounded-[var(--radius)] border border-line bg-surface px-[var(--space-6)] py-[var(--space-8)] shadow-[var(--shadow-md)] lg:px-[var(--space-12)]">
             <T k="hero.eyebrow" as="p" className="text-[length:var(--size-label)] uppercase tracking-[var(--tracking-label)] text-ink-soft" />
             <T k="hero.headline" as="h1" className="mt-3 max-w-[20ch] text-[length:var(--size-h1)] text-ink" />
