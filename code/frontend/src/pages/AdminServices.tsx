@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { T, useContent } from "../editable";
-import { useCollection, setCollection } from "../data";
+import { useCollection, setCollection, type Row } from "../data";
 import { usePageMeta } from "../seo";
 import { formatPrice } from "../lib/format";
 import type { Service } from "../lib/clinic";
