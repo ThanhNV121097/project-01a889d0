@@ -69,7 +69,7 @@ export default function BookingConfirmed() {
           <img src="/images/puppy-check.jpg" alt={alt} className="h-[300px] w-full rounded-[var(--radius)] object-cover lg:h-[380px]" width={1280} height={914} />
           <div className="mt-[var(--space-6)] border-t border-line">
             <p className="grid grid-cols-[20px_1fr] items-start gap-3 border-b border-line py-3 text-sm text-ink-soft">
-              <Icon name="location" size={20} />
+              <Icon name="address" size={20} />
               <T k="contact.address" />
             </p>
             <p className="grid grid-cols-[20px_1fr] items-start gap-3 border-b border-line py-3 text-sm text-ink-soft">
