@@ -8,6 +8,19 @@ import Section from "../components/Section";
 import Flag from "../components/Flag";
 import Icon from "../components/Icon";
 
+const EXAMPLE: Booking = {
+  id: "b-4K2QD",
+  serviceId: "s-consult",
+  serviceName: "Consultation",
+  price: 250000,
+  vetId: "v-linh",
+  vetName: "Dr Linh",
+  date: "2026-02-16",
+  time: "08:30",
+  slotLabel: "08:30",
+  petName: "Mochi",
+};
+
 /** What the owner sees after confirming: the reference, and what they booked. */
 export default function BookingConfirmed() {
   usePageMeta("booking.title");
