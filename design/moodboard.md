@@ -65,20 +65,10 @@ marquee, nothing pinned.
 
 ## COMMITMENTS
 
-- The home page opens with a full-bleed band of two clinic photographs running
-  edge to edge of the viewport, and the white booking panel overlaps 64px up
-  into it.
-- Every service is a table row — name, duration, price — with a hairline
-  between rows, and never a card in a three-card grid.
-- Every section's small-caps label sits in a left margin column beside its
-  content from 1024px up, not above it.
-- Durations and prices are right-aligned tabular figures on every page,
-  including the admin tables.
-- Dr Quân's "No Thursdays" is an accent-outlined flag beside his name wherever
-  he appears, and Thursday is visibly disabled in the booking day picker.
-- The accent #1F49E0 appears only on a primary button, a selected
-  day/slot/service/vet, a focus ring and the "today" marker — nowhere as
-  decoration.
-- An overdue vaccination is the row's own state — a left rule in the alert
-  token with the word "Overdue" set in it — not a coloured dot beside normal
-  text.
+- The home page opens with a full-bleed band of two clinic photographs running edge to edge of the viewport, and the white booking panel overlaps 64px up into it.
+- Every service is a table row — name, duration, price — with a hairline between rows, and never a card in a three-card grid.
+- Every section's small-caps label sits in a left margin column beside its content from 1024px up, not above it.
+- Durations and prices are right-aligned tabular figures on every page, including the admin tables.
+- Dr Quân's "No Thursdays" is an accent-outlined flag beside his name wherever he appears, and Thursday is visibly disabled in the booking day picker.
+- The accent #1F49E0 appears only on a primary button, a selected day, slot, service or vet, a focus ring and the "today" marker — nowhere as decoration.
+- An overdue vaccination is the row's own state — a left rule in the alert token with the word "Overdue" set in it — not a coloured dot beside normal text.
