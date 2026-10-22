@@ -51,7 +51,7 @@ export default function SignIn() {
             <T k="signin.staff" />
           </p>
         </div>
-        <img src="/images/puppy-check.jpg" alt="A puppy being checked at the clinic" className="hidden h-[380px] w-full rounded-[var(--radius)] object-cover lg:block" width={1280} height={914} />
+        <img src="/images/puppy-check.jpg" alt="A puppy being checked at the clinic" className="h-[240px] w-full rounded-[var(--radius)] object-cover lg:h-[380px]" width={1280} height={914} />
       </div>
     </Section>
   );
