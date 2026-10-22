@@ -31,6 +31,7 @@ export default function BookingConfirmed() {
   // is being looked at, show a representative one so the page can be judged.
   const booking = made ?? (demo ? EXAMPLE : null);
   const labels = useContent<{ reference: string; service: string; vet: string; when: string; price: string }>("booking");
+  const alt = useContent("booking.alt");
   if (!booking) {
     return (
       <Section labelKey="booking.label">
