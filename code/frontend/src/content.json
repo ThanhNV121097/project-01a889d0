@@ -17,7 +17,6 @@
     "signin": "Sign in",
     "signout": "Sign out",
     "admin": "Staff",
-    "theme": { "toLight": "Switch to light mode", "toDark": "Switch to dark mode" },
     "menu": { "open": "Open menu", "close": "Close menu" }
   },
   "hero": {
