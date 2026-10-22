@@ -34,9 +34,14 @@ export default function Book() {
   const chosen = date ? new Date(Number(date.slice(0, 4)), Number(date.slice(5, 7)) - 1, Number(date.slice(8, 10))) : null;
   const slots = chosen && service ? slotsFor(service, chosen) : [];
   const ready = Boolean(service && vet && date && slot && petName.trim());
+  // A half day's words are the clinic's own, in content.json; a timed slot is
+  // its own clock reading.
+  const half = useContent<Record<string, string>>("book.half");
+  const pickedSlot = slots.find((s) => s.id === slot);
+  const slotLabel = pickedSlot ? (pickedSlot.labelKey ? (half[pickedSlot.id] ?? "") : pickedSlot.time) : "";
 
   function confirm() {
-    if (!service || !vet || !ready) return;
+    if (!service || !vet || !ready || !pickedSlot) return;
     const booking = createBooking({
       serviceId: service.id,
       serviceName: service.name,
@@ -44,8 +49,8 @@ export default function Book() {
       vetId: vet.id,
       vetName: vet.name,
       date,
-      time: /^\d{2}:\d{2}$/.test(slot) ? slot : "",
-      slotLabel: slot,
+      time: pickedSlot.time,
+      slotLabel,
       petName: petName.trim(),
     });
     navigate(`/booking/${booking.id}`);
