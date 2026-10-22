@@ -112,6 +112,7 @@
     "submit": "Sign in",
     "staff": "Staff sign in here too, and land on the day's list.",
     "alt": "A cat waiting to be seen at the clinic",
+    "photoAlt": "A puppy being checked with a stethoscope at the clinic",
     "toRegister": { "text": "No account yet?", "label": "Create one", "href": "/register" }
   },
   "register": {
