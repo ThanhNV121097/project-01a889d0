@@ -54,11 +54,7 @@ export default function Home() {
               <div>
                 <T k="hero.panel.services" as="h2" className="mb-3 text-[length:var(--size-label)] uppercase tracking-[var(--tracking-label)] text-ink-soft" />
                 <ServiceHead />
-                <ServiceTable items={services.slice(0, 4)} compact />
-                <Link to="/services" data-testid="hero-all-services" className="mt-3 inline-flex items-center gap-2 text-sm text-accent">
-                  <T k="hero.panel.more" />
-                  <Icon name="arrow" size={16} />
-                </Link>
+                <ServiceTable items={services} compact />
               </div>
               <div>
                 <T k="hero.panel.vets" as="h2" className="mb-3 text-[length:var(--size-label)] uppercase tracking-[var(--tracking-label)] text-ink-soft" />
