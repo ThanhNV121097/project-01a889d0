@@ -99,6 +99,8 @@
     "price": "Price on the day",
     "change": "To change or cancel, call the clinic or tell us at the desk.",
     "account": { "label": "See your appointments", "href": "/account" },
+    "alt": "A puppy being checked at the clinic",
+    "payAtClinic": "Prices are what you pay on the day. Medicines are extra and we say so before we use them.",
     "missing": "That booking is not on this browser. Book again, or ask us at the desk."
   },
   "signin": {
