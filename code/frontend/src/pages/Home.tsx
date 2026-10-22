@@ -16,7 +16,6 @@ import Icon from "../components/Icon";
  */
 export default function Home() {
   usePageMeta("site.name");
-  const still = useReducedMotion();
   const { items: services } = useCollection<Service>("services", { pageSize: 20 });
   const { items: vets } = useCollection<Vet>("vets", { pageSize: 10 });
   const alt = useContent<{ left: string; right: string }>("hero.alt");
