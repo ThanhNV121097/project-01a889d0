@@ -66,7 +66,7 @@ function PetBody() {
           <dl className="border-t border-line">
             <Row label={labels.species} value={pet.species} />
             <Row label={labels.breed} value={pet.breed} />
-            <Row label={labels.born} value={formatDate(pet.born, "medium")} figure />
+            <Row label={labels.born} value={formatDate(pet.born)} figure />
             <Row label={labels.weight} value={`${pet.weightKg} kg`} figure />
           </dl>
           {due && (
