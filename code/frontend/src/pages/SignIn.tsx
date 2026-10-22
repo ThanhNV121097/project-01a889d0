@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { T } from "../editable";
+import { T, useContent } from "../editable";
 import { usePageMeta } from "../seo";
 import { signIn } from "../lib/session";
 import Section from "../components/Section";
