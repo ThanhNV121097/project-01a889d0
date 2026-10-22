@@ -53,6 +53,16 @@ an ear being looked into — never a stock smile. Motion: a 0.5s load settle on
 the hero, a 16px fade-and-rise per section, hover that answers on a row. No
 marquee, nothing pinned.
 
+## Crit notes
+
+- Round 1: the hero panel held only the services; the two vets and their days
+  were below the fold, so an owner could not see that Dr Quân has no Thursday
+  before choosing a day. The vets moved into the panel beside the services.
+- Round 2: the account's pets were a card grid that left a hole at three
+  items; they are full-width rows in the site's own table language instead.
+- Pictures: the clinic has none of its own. Every photograph on the site is a
+  licensed stand-in, listed in the pull request for the owner to replace.
+
 ## COMMITMENTS
 
 1. The home page opens with a full-bleed band of two clinic photographs
