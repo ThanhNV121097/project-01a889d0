@@ -133,6 +133,29 @@ function PetBody() {
           })}
         </ul>
       </Section>
+
+      {visits.length > 0 && (
+        <Section labelKey="pet.visits" className="border-t border-line">
+          <ul className="border-t border-line">
+            {visits.map((a) => (
+              <li
+                key={a.id}
+                data-record={`appointments:${a.id}`}
+                className="flex items-baseline justify-between gap-4 border-b border-line px-3 py-3"
+              >
+                <span className="min-w-0 text-ink">{serviceName(a.service)}</span>
+                <span className="flex shrink-0 items-baseline gap-5">
+                  <span className="text-sm text-ink-soft">{vetName(a.vet)}</span>
+                  <span className="w-[110px] text-right font-display tabular-nums text-[length:var(--size-figure)] text-ink">
+                    {formatDate(a.date)}
+                  </span>
+                </span>
+              </li>
+            ))}
+          </ul>
+          <T k="pet.visitsNote" as="p" className="mt-5 max-w-[52ch] text-sm text-ink-soft" />
+        </Section>
+      )}
     </>
   );
 }
