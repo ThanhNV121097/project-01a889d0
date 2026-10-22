@@ -123,7 +123,7 @@ function Body() {
       <div className="mt-[var(--space-8)] flex flex-wrap items-baseline gap-4">
         <T k="admin.heading" as="h1" className="text-[length:var(--size-h1)] text-ink" />
         <span className="font-display tabular-nums text-[length:var(--size-figure)] text-ink-soft" data-testid="admin-day-read">
-          {formatDate(day, "medium")}
+          {formatDate(day)}
         </span>
         {day === today && (
           <Flag tone="accent">
