@@ -11,6 +11,7 @@ export default function SignIn() {
   usePageMeta("signin.title");
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
+  const alt = useContent("signin.photoAlt");
   const field = "w-full rounded-[var(--radius)] border border-field bg-surface px-4 py-3 text-ink";
 
   function submit(e: FormEvent) {
