@@ -5,6 +5,7 @@ import type { Vet } from "../lib/clinic";
 import { Picture } from "../picture";
 import VetCard from "../components/VetCard";
 import Section from "../components/Section";
+import Icon from "../components/Icon";
 
 interface Testimonial { id: string; quote: string; who: string }
 
