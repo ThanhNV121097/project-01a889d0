@@ -35,7 +35,7 @@ export default function BookingConfirmed() {
         <Row label={labels.reference} value={booking.id} figure />
         <Row label={labels.service} value={booking.serviceName} />
         <Row label={labels.vet} value={booking.vetName} />
-        <Row label={labels.when} value={`${formatDate(booking.date, "medium")} · ${booking.slotLabel}`} />
+        <Row label={labels.when} value={`${formatDate(booking.date)} · ${booking.slotLabel}`} />
         <Row label={labels.price} value={formatPrice(booking.price)} figure />
       </dl>
       <T k="booking.change" as="p" className="mt-5 max-w-[52ch] text-sm text-ink-soft" />
