@@ -14,7 +14,7 @@ export default function Clinic() {
   usePageMeta("clinic.title");
   const { items: vets } = useCollection<Vet>("vets", { pageSize: 10 });
   const { items: says } = useCollection<Testimonial>("testimonials", { pageSize: 10 });
-  const alt = useContent<{ cat: string; room: string }>("clinic.alt");
+  const alt = useContent<{ ear: string; room: string }>("clinic.alt");
   const written = says.filter((t) => t.quote.trim() !== "");
   const anyWritten = written.length > 0;
   return (
