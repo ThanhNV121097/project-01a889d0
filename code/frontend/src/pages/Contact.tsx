@@ -59,11 +59,13 @@ export default function Contact() {
                 </dd>
               </div>
             </dl>
+            <T k="contact.formHeading" as="h2" className="mt-[var(--space-12)] text-[length:var(--size-h2)] text-ink" />
+            <ContactForm className="mt-5" fields={[{ key: "pet" }, { key: "day", type: "date" }]} />
           </div>
           <img
             src="/images/exam-room.jpg"
             alt={alt}
-            className="h-[280px] w-full rounded-[var(--radius)] object-cover lg:h-[560px]"
+            className="h-[280px] w-full rounded-[var(--radius)] object-cover lg:h-[640px]"
             width={1280}
             height={1024}
           />
@@ -72,11 +74,6 @@ export default function Contact() {
 
       <Section labelKey="contact.mapLabel" className="border-t border-line">
         <MapEmbed className="h-[360px]" />
-      </Section>
-
-      <Section labelKey="contact.label" className="border-t border-line">
-        <T k="contact.formHeading" as="h2" className="text-[length:var(--size-h2)] text-ink" />
-        <ContactForm className="mt-6 max-w-[46ch]" fields={[{ key: "pet" }, { key: "day", type: "date" }]} />
       </Section>
     </>
   );
