@@ -60,7 +60,7 @@ function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-ground/95 backdrop-blur">
       <div className="mx-auto flex h-[var(--header-h)] max-w-page items-center justify-between px-[var(--gutter)]">
-        <Link to="/" aria-label={useContent("site.name")}>
+        <Link to="/" aria-label={name}>
           <Logo />
         </Link>
         <nav className="hidden items-center gap-7 text-sm text-ink-soft lg:flex">
