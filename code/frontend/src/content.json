@@ -1,64 +1,263 @@
 {
   "site": {
-    "name": "Your business",
+    "name": "Bốn Chân",
     "logo": "",
-    "description": "One sentence on what the business is, for search results and shared links.",
+    "description": "A small veterinary clinic on Trần Duy Hưng, Hà Nội. Dogs and cats only. Every service with its length and its price, and a time you can book yourself.",
     "locale": "vi-VN"
   },
   "nav": {
     "links": [
-      {
-        "label": "Home",
-        "href": "/"
-      }
+      { "label": "Services", "href": "/services" },
+      { "label": "Book", "href": "/book" },
+      { "label": "The clinic", "href": "/clinic" },
+      { "label": "Contact", "href": "/contact" }
     ],
-    "cta": {
-      "label": "Get in touch",
-      "href": "#contact"
-    },
-    "theme": {
-      "toLight": "Switch to light mode",
-      "toDark": "Switch to dark mode"
-    },
-    "menu": {
-      "open": "Open menu",
-      "close": "Close menu"
-    }
+    "cta": { "label": "Book an appointment", "href": "/book" },
+    "account": "Your pets",
+    "signin": "Sign in",
+    "signout": "Sign out",
+    "admin": "Staff",
+    "theme": { "toLight": "Switch to light mode", "toDark": "Switch to dark mode" },
+    "menu": { "open": "Open menu", "close": "Close menu" }
   },
   "hero": {
-    "eyebrow": "",
-    "headline": "A headline of a few words",
-    "sub": "One line under it, and no more.",
-    "cta": {
-      "label": "Get in touch",
-      "href": "#contact"
+    "eyebrow": "Trần Duy Hưng, Hà Nội · Dogs and cats only",
+    "headline": "Book the right slot, not a wrong hour",
+    "sub": "Every service says how long it takes and what it costs before you pick a time.",
+    "cta": { "label": "Book an appointment", "href": "/book" },
+    "second": { "label": "See all services and prices", "href": "/services" },
+    "panel": {
+      "services": "What a visit costs",
+      "vets": "Who you will see",
+      "more": "All seven services"
+    },
+    "alt": {
+      "left": "A vet's hands on a dog during an examination",
+      "right": "A puppy on the examination table being checked with a stethoscope"
     }
   },
-  "footer": {
-    "line": "Your business · District 1, Saigon"
+  "home": {
+    "hours": {
+      "label": "Open",
+      "heading": "Open six full days and Sunday morning",
+      "note": "Walk in if you must, but a booked slot is seen on time."
+    },
+    "honest": {
+      "label": "Plainly",
+      "heading": "What you pay, and what we will not do",
+      "price": "Prices are what you pay on the day. Medicines are extra and we say so before we use them.",
+      "scope": "Dogs and cats only. We turn away rabbits and reptiles rather than pretend we are good at them.",
+      "pay": "You pay at the clinic. Nothing is taken on this site."
+    },
+    "account": {
+      "label": "Your pets",
+      "heading": "Nobody should telephone to ask when a shot is due",
+      "sub": "Sign in and your pets, their weights, their vaccination history and what is due next are on one page.",
+      "cta": { "label": "Create an account", "href": "/register" }
+    },
+    "vets": { "label": "The vets", "heading": "Two vets, and what each is for" }
   },
-  "credits": {
-    "label": "Photos"
+  "services": {
+    "title": "Services and prices",
+    "label": "Services",
+    "heading": "Seven things we do, with the time each takes",
+    "sub": "Prices are what you pay on the day. Medicines are extra and we say so before we use them.",
+    "columns": { "service": "Service", "duration": "Time", "price": "Price" },
+    "cta": { "label": "Book an appointment", "href": "/book" },
+    "alt": "A dog's ear being examined at the clinic"
+  },
+  "book": {
+    "title": "Book an appointment",
+    "label": "Booking",
+    "heading": "Pick the service, the vet, the day and the time",
+    "sub": "One appointment, one pet. The length of the slot follows the service you choose.",
+    "steps": {
+      "service": "Choose a service",
+      "vet": "Choose a vet",
+      "day": "Choose a day",
+      "slot": "Choose a time",
+      "pet": "Which pet is coming",
+      "summary": "Your appointment"
+    },
+    "pet": { "name": "Pet's name", "note": "New to us? Tell us at the desk and we will put the pet on your file." },
+    "closed": "Closed",
+    "noThursday": "Not on Thursdays",
+    "halfDay": "A half day — the desk will agree the hour with you",
+    "confirm": "Confirm booking",
+    "pick": "Choose a service to see the times.",
+    "none": "No times left on this day. Try another."
+  },
+  "booking": {
+    "title": "Booking confirmed",
+    "label": "Confirmed",
+    "heading": "Booking confirmed",
+    "sub": "Bring the pet and anything we have given you before. You pay at the clinic.",
+    "reference": "Reference",
+    "service": "Service",
+    "vet": "Vet",
+    "when": "When",
+    "price": "Price on the day",
+    "change": "To change or cancel, call the clinic or tell us at the desk.",
+    "account": { "label": "See your appointments", "href": "/account" },
+    "missing": "That booking is not on this browser. Book again, or ask us at the desk."
+  },
+  "signin": {
+    "title": "Sign in",
+    "label": "Sign in",
+    "heading": "Sign in to see your pets",
+    "sub": "Your pets, their vaccination history and your appointments.",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign in",
+    "staff": "Staff sign in here too, and land on the day's list.",
+    "toRegister": { "text": "No account yet?", "label": "Create one", "href": "/register" }
+  },
+  "register": {
+    "title": "Create an account",
+    "label": "New account",
+    "heading": "Create an account",
+    "sub": "So you never have to telephone to ask when the next shot is due.",
+    "name": "Your name",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Create account",
+    "gives": {
+      "pets": "Every pet on your file — breed, date of birth, weight at the last visit",
+      "due": "Each vaccination with the date it was given and the date the next is due",
+      "appointments": "Your appointments, past and upcoming"
+    },
+    "toSignin": { "text": "Already have an account?", "label": "Sign in", "href": "/signin" },
+    "alt": "The consulting room at Bốn Chân"
+  },
+  "account": {
+    "title": "Your pets",
+    "label": "Your pets",
+    "heading": "Your pets and your appointments",
+    "summary": { "pets": "Pets", "upcoming": "Upcoming", "due": "Next due", "overdue": "Overdue" },
+    "pets": "Pets on your file",
+    "upcoming": "Upcoming appointments",
+    "past": "Past appointments",
+    "nextDue": "Next due",
+    "overdue": "Overdue",
+    "none": "Nothing booked yet.",
+    "addPetNote": "A pet missing? Tell us at the desk and we will put it on your file.",
+    "change": "Changing an appointment: call the clinic or tell us at the desk.",
+    "book": { "label": "Book an appointment", "href": "/book" },
+    "signout": "Sign out"
+  },
+  "pet": {
+    "title": "Pet record",
+    "label": "Pet record",
+    "species": "Species",
+    "breed": "Breed",
+    "born": "Date of birth",
+    "weight": "Weight at the last visit",
+    "nextDue": "Next due",
+    "vaccinations": "Vaccination history",
+    "visits": "Visits",
+    "columns": { "vaccine": "Vaccine", "given": "Given", "due": "Next due", "by": "By" },
+    "overdue": "Overdue",
+    "back": { "label": "All your pets", "href": "/account" },
+    "missing": "That pet is not on your file."
+  },
+  "clinic": {
+    "title": "The clinic",
+    "label": "The clinic",
+    "heading": "Two vets on Trần Duy Hưng",
+    "story": "Bốn Chân is two vets and a nurse in one room on Trần Duy Hưng. We see dogs and cats, and only dogs and cats — a rabbit or a reptile deserves someone who sees them every week, and that is not us. We would rather say what a visit costs before you come than explain it afterwards.",
+    "vets": { "label": "The vets", "heading": "Who you will see" },
+    "says": { "label": "Owners", "heading": "What owners say", "empty": "We have not collected these yet." },
+    "alt": { "cat": "A cat waiting to be seen", "room": "A dog being comforted in the consulting room" }
   },
   "contact": {
+    "title": "Contact",
+    "label": "Contact",
+    "heading": "Where we are, and when we are open",
     "phone": "",
     "zalo": "",
     "email": "",
-    "address": "",
-    "hours": "",
-    "dock": {
-      "call": "Call us",
-      "zalo": "Message us on Zalo"
-    },
+    "address": "Trần Duy Hưng, Hà Nội",
+    "addressNumber": "",
+    "hours": "8:00–19:00 Monday to Saturday · 8:00–12:00 Sunday",
+    "hoursWeek": "Monday to Saturday, 8:00–19:00",
+    "hoursSunday": "Sunday, 8:00–12:00",
+    "labels": { "address": "Address", "hours": "Opening hours", "phone": "Telephone", "scope": "We see" },
+    "scope": "Dogs and cats only",
+    "formHeading": "Send us a message",
+    "alt": "The front of the clinic on Trần Duy Hưng",
+    "dock": { "call": "Call us", "zalo": "Message us on Zalo" },
     "form": {
       "name": "Your name",
       "reply_to": "Phone or email",
       "message": "Your message",
-      "send": "Send",
+      "send": "Send message",
       "sending": "Sending…",
       "sent": "Thank you — we have your message and will answer soon.",
-      "offline": "This form is not connected yet — call or message us instead.",
-      "fields": {}
+      "offline": "This form is not connected yet — call or come in instead.",
+      "fields": { "pet": "Your pet's name", "day": "A day that suits you" }
     }
-  }
+  },
+  "admin": {
+    "title": "The day's list",
+    "label": "Staff",
+    "heading": "Today at the clinic",
+    "nav": { "day": "The day", "patients": "Patients", "services": "Services", "hours": "Hours" },
+    "search": "Search a pet or an owner",
+    "filterVet": "Any vet",
+    "filterService": "Any service",
+    "export": "Export CSV",
+    "today": "Today",
+    "columns": {
+      "time": "Time",
+      "pet": "Pet",
+      "owner": "Owner",
+      "service": "Service",
+      "vet": "Vet",
+      "status": "Status",
+      "price": "Price",
+      "actions": ""
+    },
+    "status": { "booked": "Booked", "arrived": "Arrived", "consulting": "In consultation", "done": "Done", "noshow": "No-show" },
+    "actions": { "confirm": "Confirm", "reschedule": "Reschedule", "cancel": "Cancel", "advance": "Next status" },
+    "empty": "Nothing matches that.",
+    "count": "appointments",
+    "signin": "Staff sign-in is the same door.",
+    "patients": {
+      "title": "Patients",
+      "heading": "Patient records",
+      "search": "Search a pet, a breed or an owner",
+      "overdue": "Overdue only",
+      "add": "Add a patient",
+      "edit": "Edit",
+      "save": "Save",
+      "cancel": "Cancel",
+      "columns": { "pet": "Pet", "species": "Species", "breed": "Breed", "born": "Born", "weight": "Weight", "owner": "Owner", "due": "Next due" },
+      "count": "patients"
+    },
+    "servicesPage": {
+      "title": "Services and prices",
+      "heading": "Services and prices",
+      "note": "Prices change. What is here is what the booking page shows.",
+      "save": "Save price"
+    },
+    "hours": {
+      "title": "The vets' hours",
+      "heading": "The vets' working hours",
+      "note": "The booking page reads these: a day a vet does not work cannot be chosen.",
+      "works": "Works",
+      "off": "Off"
+    }
+  },
+  "footer": {
+    "line": "Bốn Chân · Trần Duy Hưng, Hà Nội",
+    "hours": "8:00–19:00 Monday to Saturday · 8:00–12:00 Sunday",
+    "scope": "Dogs and cats only",
+    "columns": {
+      "visit": "Visit",
+      "book": "Book",
+      "account": "Your account"
+    }
+  },
+  "credits": { "label": "Photos" },
+  "common": { "loading": "Loading…" }
 }
