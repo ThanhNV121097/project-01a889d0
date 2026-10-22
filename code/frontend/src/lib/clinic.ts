@@ -100,10 +100,15 @@ function clock(minutes: number): string {
 }
 
 export interface Slot {
+  /** What identifies the slot: "08:30", or "morning" / "afternoon". */
+  id: string;
   /** "08:30", or "" for a half-day block whose hour the desk agrees. */
   time: string;
-  /** What the button reads: the time, or "Morning" / "Afternoon". */
-  label: string;
+  /**
+   * For a half-day block, the content.json key its words come from — the
+   * clinic's own copy lives there, never in this file.
+   */
+  labelKey?: string;
 }
 
 /**
