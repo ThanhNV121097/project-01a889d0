@@ -1,3 +1,68 @@
 {
-  "collections": {}
+  "collections": {
+    "services": {
+      "label": "Services",
+      "fields": [
+        { "key": "name", "label": "Service", "type": "text" },
+        { "key": "forWhat", "label": "What it is for", "type": "text" },
+        { "key": "minutes", "label": "Minutes", "type": "number" },
+        { "key": "durationLabel", "label": "Time, as written", "type": "text" },
+        { "key": "price", "label": "Price", "type": "price", "currency": "VND" },
+        { "key": "priceNote", "label": "Price note", "type": "text" },
+        { "key": "halfDay", "label": "Half day", "type": "bool" }
+      ]
+    },
+    "vets": {
+      "label": "Vets",
+      "fields": [
+        { "key": "name", "label": "Name", "type": "text" },
+        { "key": "years", "label": "Years", "type": "number" },
+        { "key": "forWhat", "label": "What they are for", "type": "longtext" },
+        { "key": "daysOff", "label": "Days off", "type": "list" },
+        { "key": "image", "label": "Photograph", "type": "image" }
+      ]
+    },
+    "pets": {
+      "label": "Patients",
+      "fields": [
+        { "key": "name", "label": "Pet", "type": "text" },
+        { "key": "species", "label": "Species", "type": "text" },
+        { "key": "breed", "label": "Breed", "type": "text" },
+        { "key": "born", "label": "Date of birth", "type": "text" },
+        { "key": "weightKg", "label": "Weight at the last visit (kg)", "type": "number" },
+        { "key": "owner", "label": "Owner", "type": "text" },
+        { "key": "ownerEmail", "label": "Owner's email", "type": "text" },
+        { "key": "image", "label": "Photograph", "type": "image" }
+      ]
+    },
+    "vaccinations": {
+      "label": "Vaccinations",
+      "fields": [
+        { "key": "pet", "label": "Pet", "type": "ref:pets" },
+        { "key": "vaccine", "label": "Vaccine", "type": "text" },
+        { "key": "given", "label": "Given", "type": "text" },
+        { "key": "due", "label": "Next due", "type": "text" },
+        { "key": "vet", "label": "Given by", "type": "ref:vets" }
+      ]
+    },
+    "appointments": {
+      "label": "Appointments",
+      "fields": [
+        { "key": "pet", "label": "Pet", "type": "ref:pets" },
+        { "key": "service", "label": "Service", "type": "ref:services" },
+        { "key": "vet", "label": "Vet", "type": "ref:vets" },
+        { "key": "date", "label": "Date", "type": "text" },
+        { "key": "time", "label": "Time", "type": "text" },
+        { "key": "status", "label": "Status", "type": "text" },
+        { "key": "ownerEmail", "label": "Owner's email", "type": "text" }
+      ]
+    },
+    "testimonials": {
+      "label": "What owners say",
+      "fields": [
+        { "key": "quote", "label": "What they said", "type": "longtext" },
+        { "key": "who", "label": "Who said it", "type": "text" }
+      ]
+    }
+  }
 }

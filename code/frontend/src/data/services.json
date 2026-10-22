@@ -1,0 +1,9 @@
+[
+  { "id": "s-consult", "name": "Consultation", "forWhat": "Something is wrong and you want it looked at", "minutes": 30, "durationLabel": "30 min", "price": 250000, "priceNote": "", "halfDay": false, "_source": "owner" },
+  { "id": "s-vaccination", "name": "Vaccination", "forWhat": "A shot due, or a course started", "minutes": 15, "durationLabel": "15 min", "price": 180000, "priceNote": "from, depending on the vaccine", "halfDay": false, "_source": "owner" },
+  { "id": "s-newpet", "name": "New puppy or kitten check", "forWhat": "A first full look at a new animal", "minutes": 45, "durationLabel": "45 min", "price": 400000, "priceNote": "", "halfDay": false, "_source": "owner" },
+  { "id": "s-dental", "name": "Dental scaling under anaesthetic", "forWhat": "Tartar, bad breath, a sore mouth", "minutes": 240, "durationLabel": "Half day", "price": 1800000, "priceNote": "from", "halfDay": true, "_source": "owner" },
+  { "id": "s-neuter", "name": "Neutering", "forWhat": "A cat, or a dog by weight", "minutes": 240, "durationLabel": "Half day", "price": 1200000, "priceNote": "a cat; from 2.000.000 ₫ for a dog by weight", "halfDay": true, "_source": "owner" },
+  { "id": "s-microchip", "name": "Microchip", "forWhat": "So a lost animal comes home", "minutes": 15, "durationLabel": "15 min", "price": 350000, "priceNote": "", "halfDay": false, "_source": "owner" },
+  { "id": "s-grooming", "name": "Grooming and nail trim", "forWhat": "Coat, nails, ears", "minutes": 45, "durationLabel": "45 min", "price": 200000, "priceNote": "", "halfDay": false, "_source": "owner" }
+]
