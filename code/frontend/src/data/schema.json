@@ -54,6 +54,7 @@
         { "key": "date", "label": "Date", "type": "text" },
         { "key": "time", "label": "Time", "type": "text" },
         { "key": "status", "label": "Status", "type": "text" },
+        { "key": "confirmed", "label": "Confirmed", "type": "bool" },
         { "key": "ownerEmail", "label": "Owner's email", "type": "text" }
       ]
     },
