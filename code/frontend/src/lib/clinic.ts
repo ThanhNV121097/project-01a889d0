@@ -120,15 +120,15 @@ export function slotsFor(service: Service | undefined, date: Date): Slot[] {
   const hours = openHours(date);
   if (!service || !hours) return [];
   if (service.halfDay) {
-    const blocks: Slot[] = [{ time: "", label: "Morning" }];
-    if (hours.to > 13 * 60) blocks.push({ time: "", label: "Afternoon" });
+    const blocks: Slot[] = [{ id: "morning", time: "", labelKey: "book.half.morning" }];
+    if (hours.to > 13 * 60) blocks.push({ id: "afternoon", time: "", labelKey: "book.half.afternoon" });
     return blocks;
   }
   const out: Slot[] = [];
   for (let t = hours.from; t + service.minutes <= hours.to; t += service.minutes) {
     // The clinic's lunch, the one hour the owner's hours leave implied by the
     // Sunday close: kept bookable on purpose — the brief names no break.
-    out.push({ time: clock(t), label: clock(t) });
+    out.push({ id: clock(t), time: clock(t) });
   }
   return out;
 }
