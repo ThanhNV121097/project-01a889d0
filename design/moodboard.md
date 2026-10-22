@@ -70,5 +70,5 @@ marquee, nothing pinned.
 - Every section's small-caps label sits in a left margin column beside its content from 1024px up, not above it.
 - Durations and prices are right-aligned tabular figures on every page, including the admin tables.
 - Dr Quân's "No Thursdays" is an accent-outlined flag beside his name wherever he appears, and Thursday is visibly disabled in the booking day picker.
-- The accent #1F49E0 appears only on a primary button, a selected day, slot, service or vet, a focus ring and the "today" marker — nowhere as decoration.
+- The accent #1F49E0 appears only on a primary button, a selected day, slot, service or vet, an inline text link, a focus ring and the "today" marker — nowhere as decoration. No icon beside body copy is ever set in it.
 - An overdue vaccination is the row's own state — a left rule in the alert token with the word "Overdue" set in it — not a coloured dot beside normal text.
