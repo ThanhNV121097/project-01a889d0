@@ -102,15 +102,15 @@ export default function Home() {
         <T k="home.honest.heading" as="h2" className="max-w-[24ch] text-[length:var(--size-h2)] text-ink" />
         <ul className="mt-5 grid gap-[var(--space-6)] sm:grid-cols-2">
           <li className="flex gap-3">
-            <Icon name="cash" size={20} className="mt-1 text-accent" />
+            <Icon name="cash" size={20} className="mt-1 text-ink-soft" />
             <T k="home.honest.price" as="p" className="max-w-[44ch] text-ink-soft" />
           </li>
           <li className="flex gap-3">
-            <Icon name="info" size={20} className="mt-1 text-accent" />
+            <Icon name="info" size={20} className="mt-1 text-ink-soft" />
             <T k="home.honest.scope" as="p" className="max-w-[44ch] text-ink-soft" />
           </li>
           <li className="flex gap-3">
-            <Icon name="store" size={20} className="mt-1 text-accent" />
+            <Icon name="store" size={20} className="mt-1 text-ink-soft" />
             <T k="home.honest.pay" as="p" className="max-w-[44ch] text-ink-soft" />
           </li>
         </ul>
