@@ -127,7 +127,7 @@ export default function Book() {
             <dl className="mt-4 border-t border-line text-sm">
               <Row label={useContent("booking.service")} value={service ? service.name : "—"} />
               <Row label={useContent("booking.vet")} value={vet ? vet.name : "—"} />
-              <Row label={useContent("booking.when")} value={date ? `${formatDate(date)}${slot ? ` · ${slot}` : ""}` : "—"} />
+              <Row label={useContent("booking.when")} value={date ? `${formatDate(date)}${slotLabel ? ` · ${slotLabel}` : ""}` : "—"} />
               <Row label={useContent("booking.price")} value={service ? formatPrice(service.price) : "—"} figure />
             </dl>
             <button
