@@ -234,6 +234,7 @@
     "dayLabels": { "today": "Today", "pick": "Day", "searching": "Searching every day, not only this one." },
     "empty": "Nothing on this day. Pick another, or clear the filters.",
     "count": "appointments",
+    "of": "of",
     "signin": "Staff sign-in is the same door.",
     "patients": {
       "title": "Patients",
