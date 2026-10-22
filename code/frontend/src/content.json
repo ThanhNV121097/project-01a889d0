@@ -228,7 +228,9 @@
     },
     "status": { "booked": "Booked", "arrived": "Arrived", "consulting": "In consultation", "done": "Done", "noshow": "No-show" },
     "actions": { "confirm": "Confirm", "reschedule": "Reschedule", "cancel": "Cancel", "advance": "Next status" },
-    "empty": "Nothing matches that.",
+    "reschedule": { "heading": "Reschedule", "date": "New day", "time": "New time", "save": "Save", "close": "Close" },
+    "dayLabels": { "today": "Today", "pick": "Day" },
+    "empty": "Nothing on this day. Pick another, or clear the filters.",
     "count": "appointments",
     "signin": "Staff sign-in is the same door.",
     "patients": {
