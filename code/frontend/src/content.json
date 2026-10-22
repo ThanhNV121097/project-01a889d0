@@ -27,8 +27,7 @@
     "second": { "label": "See all services and prices", "href": "/services" },
     "panel": {
       "services": "What a visit costs",
-      "vets": "Who you will see",
-      "more": "All seven services"
+      "vets": "Who you will see"
     },
     "alt": {
       "left": "A vet's hands on a dog during an examination",
