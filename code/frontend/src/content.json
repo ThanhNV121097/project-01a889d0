@@ -169,7 +169,12 @@
     "heading": "Two vets on Trần Duy Hưng",
     "story": "Bốn Chân is two vets and a nurse in one room on Trần Duy Hưng. We see dogs and cats, and only dogs and cats — a rabbit or a reptile deserves someone who sees them every week, and that is not us. We would rather say what a visit costs before you come than explain it afterwards.",
     "vets": { "label": "The vets", "heading": "Who you will see" },
-    "says": { "label": "Owners", "heading": "What owners say", "empty": "We have not collected these yet." },
+    "says": {
+      "label": "Owners",
+      "heading": "What owners say",
+      "empty": "We have not collected these yet.",
+      "waiting": "A place for an owner's own words. Three are waiting to be filled in."
+    },
     "alt": { "cat": "A cat waiting to be seen", "room": "A dog being comforted in the consulting room" }
   },
   "contact": {
