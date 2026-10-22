@@ -18,7 +18,7 @@
 
   /* Two states the clinic's own work demands, and nothing else uses them:
      an overdue vaccination, and a confirmed booking. */
-  --alert: #B4521B;
+  --alert: #92400E;
   --alert-ground: #FBF0E8;
   --ok: #1B6B4B;
   --ok-ground: #E8F2EC;
