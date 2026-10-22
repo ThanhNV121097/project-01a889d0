@@ -15,6 +15,7 @@ export default function Clinic() {
   const { items: says } = useCollection<Testimonial>("testimonials", { pageSize: 10 });
   const alt = useContent<{ cat: string; room: string }>("clinic.alt");
   const written = says.filter((t) => t.quote.trim() !== "");
+  const anyWritten = written.length > 0;
   return (
     <>
       <Section labelKey="clinic.label">
