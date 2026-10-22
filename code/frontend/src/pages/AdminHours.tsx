@@ -23,6 +23,7 @@ const WEEK = [...DAY_NAMES.slice(1), DAY_NAMES[0]];
 
 function Body() {
   const { items: vets } = useCollection<Vet>("vets", { pageSize: 10 });
+  const alt = useContent("admin.hours.alt");
   return (
     <Section labelKey="admin.label">
       <AdminNav />
