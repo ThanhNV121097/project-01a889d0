@@ -43,24 +43,24 @@ export function DayPicker({ days, vet, value, onPick }: { days: Date[]; vet?: Ve
   );
 }
 
-export function SlotPicker({ slots, value, onPick }: { slots: Slot[]; value: string; onPick: (label: string) => void }) {
+export function SlotPicker({ slots, value, onPick }: { slots: Slot[]; value: string; onPick: (slot: Slot) => void }) {
   if (slots.length === 0) return <T k="book.none" as="p" className="text-ink-soft" />;
   return (
     <ul className="grid grid-cols-3 gap-2 sm:grid-cols-5 lg:grid-cols-8">
       {slots.map((s, i) => {
-        const picked = value === s.label;
+        const picked = value === s.id;
         return (
-          <li key={s.label}>
+          <li key={s.id}>
             <button
               type="button"
               data-testid={`slot-${i}`}
-              onClick={() => onPick(s.label)}
+              onClick={() => onPick(s)}
               aria-pressed={picked}
               className={`w-full rounded-[var(--radius)] border px-2 py-2 text-center font-display tabular-nums text-sm transition-colors duration-[var(--duration-fast)] ${
                 picked ? "border-accent bg-accent text-accent-ink" : "border-line bg-surface hover:bg-ground"
               }`}
             >
-              {s.label}
+              {s.labelKey ? <T k={s.labelKey} /> : s.time}
             </button>
           </li>
         );
