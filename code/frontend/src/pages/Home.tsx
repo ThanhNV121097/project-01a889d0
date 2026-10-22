@@ -72,7 +72,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </section>
 
       <Section labelKey="home.hours.label">
