@@ -81,6 +81,7 @@
     "pet": { "name": "Pet's name", "note": "New to us? Tell us at the desk and we will put the pet on your file." },
     "closed": "Closed",
     "noThursday": "Not on Thursdays",
+    "half": { "morning": "Morning", "afternoon": "Afternoon" },
     "halfDay": "A half day — the desk will agree the hour with you",
     "confirm": "Confirm booking",
     "pick": "Choose a service to see the times.",
