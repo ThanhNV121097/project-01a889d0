@@ -103,3 +103,16 @@ two, the two vets and the days they work — overlapping 64px up into it.
   given, and none was invented.
 - The photographs are stand-ins. The clinic has none of its own yet; whichever
   direction wins, those are the shots to replace.
+
+---
+
+CHOSEN: Direction 3 — The day on one screen — because the owner said plainly
+that the part that matters most is the clinic's own day, managed without
+paper, and that they would rather an owner booked the right twenty-minute
+slot than a wrong hour. That is a site made of facts — seven services with
+their durations and prices, two vets and the days each works, today's list
+with its statuses — and the dense, cool, tabular reading is the only one of
+the three that makes a wall of facts look deliberate instead of crowded.
+Direction 1 sets the price list beautifully but has no language for the
+admin tables; Direction 2's dark warmth suits the frightened cat and fights
+every table behind the staff sign-in.
