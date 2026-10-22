@@ -56,6 +56,7 @@ export default function BookingConfirmed() {
         <Row label={labels.when} value={`${formatDate(booking.date)} · ${booking.slotLabel}`} />
         <Row label={labels.price} value={formatPrice(booking.price)} figure />
       </dl>
+      <img src="/images/puppy-check.jpg" alt="A pet being seen at the clinic" className="mt-[var(--space-8)] h-[240px] w-full rounded-[var(--radius)] object-cover" width={1280} height={914} />
       <T k="booking.change" as="p" className="mt-5 max-w-[52ch] text-sm text-ink-soft" />
       <Link to="/account" data-testid="booking-account" className="mt-6 inline-flex items-center gap-2 text-accent">
         <T k="booking.account.label" />
