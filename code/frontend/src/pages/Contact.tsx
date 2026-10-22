@@ -59,19 +59,19 @@ export default function Contact() {
                 </dd>
               </div>
             </dl>
-            <img
-              src="/images/exam-room.jpg"
-              alt={alt}
-              className="mt-[var(--space-8)] h-[200px] w-full rounded-[var(--radius)] object-cover"
-              width={1280}
-              height={1024}
-            />
           </div>
-          <div>
-            <T k="contact.mapLabel" as="h2" className={dt} />
-            <MapEmbed className="mt-3 h-[360px] lg:h-[520px]" />
-          </div>
+          <img
+            src="/images/exam-room.jpg"
+            alt={alt}
+            className="h-[280px] w-full rounded-[var(--radius)] object-cover lg:h-[560px]"
+            width={1280}
+            height={1024}
+          />
         </div>
+      </Section>
+
+      <Section labelKey="contact.mapLabel" className="border-t border-line">
+        <MapEmbed className="h-[360px]" />
       </Section>
 
       <Section labelKey="contact.label" className="border-t border-line">
