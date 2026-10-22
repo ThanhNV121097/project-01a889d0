@@ -61,7 +61,7 @@ export default function Register() {
               <T k="register.gives.pets" as="span" className="text-ink-soft" />
             </li>
             <li className="flex items-start gap-3 border-b border-line py-3">
-              <Icon name="date" size={18} className="mt-1 text-accent" />
+              <Icon name="date" size={18} className="mt-1 text-ink-soft" />
               <T k="register.gives.due" as="span" className="text-ink-soft" />
             </li>
             <li className="flex items-start gap-3 border-b border-line py-3">
