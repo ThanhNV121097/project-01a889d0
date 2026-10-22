@@ -193,7 +193,8 @@
     "labels": { "address": "Address", "hours": "Opening hours", "phone": "Telephone", "scope": "We see" },
     "scope": "Dogs and cats only",
     "formHeading": "Send us a message",
-    "alt": "The front of the clinic on Trần Duy Hưng",
+    "alt": "A vet's hands on a dog in the consulting room",
+    "mapLabel": "On the map",
     "dock": { "call": "Call us", "zalo": "Message us on Zalo" },
     "form": {
       "name": "Your name",
