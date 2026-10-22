@@ -25,6 +25,8 @@ function PetBody() {
   const { item: pet } = useRecord<Pet>("pets", id);
   const { items: vaccinations } = useCollection<Vaccination>("vaccinations", { pageSize: 100 });
   const { items: vets } = useCollection<Vet>("vets", { pageSize: 10 });
+  const { items: appointments } = useCollection<Appointment>("appointments", { pageSize: 100 });
+  const { items: services } = useCollection<Service>("services", { pageSize: 20 });
   const columns = useContent<{ vaccine: string; given: string; due: string; by: string }>("pet.columns");
   const labels = useContent<{ species: string; breed: string; born: string; weight: string }>("pet");
 
