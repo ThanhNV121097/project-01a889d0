@@ -87,7 +87,7 @@ function Body() {
           <T k="admin.export" />
         </button>
         <span className="text-sm tabular-nums text-ink-soft" data-testid="patients-count">
-          {total} <T k="admin.patients.count" />
+          {rows.length} <T k="admin.of" /> {total} <T k="admin.patients.count" />
         </span>
       </div>
 
