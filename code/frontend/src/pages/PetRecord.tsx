@@ -3,7 +3,7 @@ import { T, useContent } from "../editable";
 import { useCollection, useRecord } from "../data";
 import { usePageMeta } from "../seo";
 import { formatDate } from "../lib/format";
-import { isOverdue, nextDue, type Pet, type Vaccination, type Vet } from "../lib/clinic";
+import { isOverdue, nextDue, type Appointment, type Pet, type Service, type Vaccination, type Vet } from "../lib/clinic";
 import { Picture } from "../picture";
 import Section from "../components/Section";
 import Flag from "../components/Flag";
