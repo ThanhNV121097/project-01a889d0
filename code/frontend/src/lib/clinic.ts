@@ -59,7 +59,14 @@ export interface Appointment {
   date: string;
   time: string;
   status: string;
+  /** The desk has telephoned or the owner has answered: the row is agreed. */
+  confirmed?: boolean;
   ownerEmail: string;
+}
+
+/** A day as the records write it: "2026-10-22". */
+export function isoDay(date: Date): string {
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
 }
 
 export const DAY_NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
