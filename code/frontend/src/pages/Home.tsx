@@ -19,7 +19,7 @@ export default function Home() {
   const { items: services } = useCollection<Service>("services", { pageSize: 20 });
   const { items: vets } = useCollection<Vet>("vets", { pageSize: 10 });
   const alt = useContent<{ left: string; right: string }>("hero.alt");
-  const catAlt = useContent<{ cat: string; room: string }>("clinic.alt");
+  const homeAlt = useContent<{ cat: string }>("home.alt");
 
   return (
     <>
