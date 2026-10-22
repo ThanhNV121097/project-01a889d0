@@ -36,6 +36,14 @@
   --size-h2: clamp(1.3rem, 1.6vw, 1.5rem);
   /* A figure in a table — a duration, a price, a weight. */
   --size-figure: 18px;
+  /* The services table's columns, one template shared by the head and every
+     row so the durations and prices line up down the column. Fixed, never
+     content-sized: a long price note must wrap inside its cell, not widen it.
+     Below 640px the two figures stack in one right-hand column. */
+  --col-time: 92px;
+  --col-price: 168px;
+  --col-figure: 132px;
+
   /* A section's small-caps label, and the column it sits in from 1024px up. */
   --size-label: 11px;
   --tracking-label: 0.12em;
