@@ -115,12 +115,12 @@ function Footer() {
         <div>
           <Logo />
           <T k="footer.line" as="p" className="mt-4 text-sm text-ink-soft" />
-          <p className="mt-2 flex items-start gap-2 text-sm text-ink-soft">
-            <Icon name="hours" size={18} className="mt-[2px]" />
+          <p className="mt-2 grid grid-cols-[20px_1fr] items-start gap-2 text-sm text-ink-soft">
+            <Icon name="hours" size={20} />
             <T k="footer.hours" />
           </p>
-          <p className="mt-2 flex items-start gap-2 text-sm text-ink-soft">
-            <Icon name="info" size={18} className="mt-[2px]" />
+          <p className="mt-2 grid grid-cols-[20px_1fr] items-start gap-2 text-sm text-ink-soft">
+            <Icon name="info" size={20} />
             <T k="footer.scope" />
           </p>
         </div>
