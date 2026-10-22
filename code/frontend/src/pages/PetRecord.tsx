@@ -58,13 +58,19 @@ function PetBody() {
           <Icon name="back" size={16} />
           <T k="pet.back.label" />
         </Link>
-        <div className="mt-4 flex items-start gap-5">
-          <Picture src={pet.image} alt={pet.name} caption={`A photograph of ${pet.name}`} className="h-28 w-28 shrink-0 rounded-[var(--radius)] object-cover sm:h-32 sm:w-32" />
+        <div className="mt-4 flex flex-col gap-5 sm:flex-row sm:items-start">
+          <Picture
+            src={pet.image}
+            alt={pet.name}
+            caption={`${pet.name} — a photograph for this record`}
+            className="h-44 w-full shrink-0 rounded-[var(--radius)] object-cover sm:h-32 sm:w-32"
+          />
           <div className="min-w-0">
             <h1 className="text-[length:var(--size-h1)] text-ink">{pet.name}</h1>
             <p className="mt-1 text-ink-soft">
               {pet.species} · {pet.breed}
             </p>
+            <p className="mt-2 text-sm text-ink-soft">{pet.owner}</p>
           </div>
         </div>
 
