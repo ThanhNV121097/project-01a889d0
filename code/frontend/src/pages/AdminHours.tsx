@@ -1,4 +1,4 @@
-import { T } from "../editable";
+import { T, useContent } from "../editable";
 import { useCollection } from "../data";
 import { usePageMeta } from "../seo";
 import { DAY_NAMES, type Vet } from "../lib/clinic";
