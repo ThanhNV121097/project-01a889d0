@@ -49,19 +49,39 @@ export default function BookingConfirmed() {
       </Flag>
       <T k="booking.heading" as="h1" data-testid="booking-confirmed" className="mt-3 text-[length:var(--size-h1)] text-ink" />
       <T k="booking.sub" as="p" className="mt-3 max-w-[52ch] text-ink-soft" />
-      <dl className="mt-[var(--space-8)] max-w-[46ch] border-t border-line">
-        <Row label={labels.reference} value={booking.id} figure />
-        <Row label={labels.service} value={booking.serviceName} />
-        <Row label={labels.vet} value={booking.vetName} />
-        <Row label={labels.when} value={`${formatDate(booking.date)} · ${booking.slotLabel}`} />
-        <Row label={labels.price} value={formatPrice(booking.price)} figure />
-      </dl>
-      <img src="/images/puppy-check.jpg" alt="A pet being seen at the clinic" className="mt-[var(--space-8)] h-[240px] w-full rounded-[var(--radius)] object-cover" width={1280} height={914} />
-      <T k="booking.change" as="p" className="mt-5 max-w-[52ch] text-sm text-ink-soft" />
-      <Link to="/account" data-testid="booking-account" className="mt-6 inline-flex items-center gap-2 text-accent">
-        <T k="booking.account.label" />
-        <Icon name="arrow" size={16} />
-      </Link>
+      <div className="mt-[var(--space-8)] grid gap-[var(--space-8)] lg:grid-cols-[minmax(0,46ch)_1fr] lg:items-start">
+        <div>
+          <dl className="border-t border-line">
+            <Row label={labels.reference} value={booking.id} figure />
+            <Row label={labels.service} value={booking.serviceName} />
+            <Row label={labels.vet} value={booking.vetName} />
+            <Row label={labels.when} value={`${formatDate(booking.date)} · ${booking.slotLabel}`} />
+            <Row label={labels.price} value={formatPrice(booking.price)} figure />
+          </dl>
+          <T k="booking.change" as="p" className="mt-5 text-sm text-ink-soft" />
+          <Link to="/account" data-testid="booking-account" className="mt-6 inline-flex items-center gap-2 text-accent">
+            <T k="booking.account.label" />
+            <Icon name="arrow" size={16} />
+          </Link>
+        </div>
+        <div>
+          <img src="/images/puppy-check.jpg" alt={alt} className="h-[300px] w-full rounded-[var(--radius)] object-cover lg:h-[380px]" width={1280} height={914} />
+          <div className="mt-[var(--space-6)] border-t border-line">
+            <p className="grid grid-cols-[20px_1fr] items-start gap-3 border-b border-line py-3 text-sm text-ink-soft">
+              <Icon name="location" size={20} />
+              <T k="contact.address" />
+            </p>
+            <p className="grid grid-cols-[20px_1fr] items-start gap-3 border-b border-line py-3 text-sm text-ink-soft">
+              <Icon name="hours" size={20} />
+              <T k="contact.hours" />
+            </p>
+            <p className="grid grid-cols-[20px_1fr] items-start gap-3 py-3 text-sm text-ink-soft">
+              <Icon name="info" size={20} />
+              <T k="booking.payAtClinic" />
+            </p>
+          </div>
+        </div>
+      </div>
     </Section>
   );
 }
