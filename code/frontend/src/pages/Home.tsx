@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { motion, useReducedMotion } from "framer-motion";
 import { T, useContent } from "../editable";
 import { useCollection } from "../data";
 import { usePageMeta } from "../seo";
