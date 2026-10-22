@@ -1,8 +1,9 @@
 import { useEffect, type ReactNode } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useSession } from "../lib/session";
-import { T } from "../editable";
+import { T, useContent } from "../editable";
 import Section from "./Section";
+import Icon from "./Icon";
 
 /**
  * A page only a signed-in visitor sees — the account, a pet's record, the
