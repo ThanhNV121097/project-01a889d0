@@ -62,6 +62,20 @@ marquee, nothing pinned.
   items; they are full-width rows in the site's own table language instead.
 - Pictures: the clinic has none of its own. Every photograph on the site is a
   licensed stand-in, listed in the pull request for the owner to replace.
+- Round 3 (after TL's review): the home panel now carries all seven services,
+  which is what the low type scale was chosen for; `/contact` puts the map
+  beside the details on the first screen instead of below the fold; the
+  "What owners say" section renders its three empty rows rather than
+  disappearing; `/admin` reads one day at a time with a date picker and a
+  today flag, and every row confirms, advances, reschedules and cancels.
+
+## Faces — why two
+
+Space Grotesk sets headings and every figure; Inter sets running text. Both
+are clean sans faces, not a serif pairing: Space Grotesk's figures are the
+reason — its tabular digits are narrow and even, and this site is mostly
+columns of times, weights and prices read down a page. Inter carries the
+prose, which Space Grotesk is too mannered for at 16px.
 
 ## COMMITMENTS
 
