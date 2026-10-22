@@ -52,7 +52,7 @@ Dr Linh's hands and a calm room.
 
 ---
 
-## 3. The day on one screen — CHOSEN
+## Direction 3 — The day on one screen — CHOSEN
 
 **Colours** `#EDF0F2` ground · `#FFFFFF` surface · `#0B1016` ink · `#54616E`
 ink-soft · `#1F49E0` accent · `#FFFFFF` accent-ink
