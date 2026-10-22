@@ -5,7 +5,7 @@ chose **3, "The day on one screen"**; it is what the site is built in.
 
 ---
 
-## 1. The price is on the door
+## Direction 1 — The price is on the door
 
 **Colours** `#F7F3EC` ground · `#FFFFFF` surface · `#171310` ink · `#5B544C`
 ink-soft · `#0B5D3B` accent · `#FFFFFF` accent-ink
