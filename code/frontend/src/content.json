@@ -256,7 +256,8 @@
       "heading": "The vets' working hours",
       "note": "The booking page reads these: a day a vet does not work cannot be chosen.",
       "works": "Works",
-      "off": "Off"
+      "off": "Off",
+      "alt": "A vet's hands on a dog during an examination"
     }
   },
   "footer": {
