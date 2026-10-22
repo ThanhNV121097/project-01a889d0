@@ -19,7 +19,7 @@ export default function Home() {
   const { items: services } = useCollection<Service>("services", { pageSize: 20 });
   const { items: vets } = useCollection<Vet>("vets", { pageSize: 10 });
   const alt = useContent<{ left: string; right: string }>("hero.alt");
-  const settle = still ? {} : { initial: { opacity: 0, y: 12 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.5, ease: [0.2, 0.7, 0.2, 1] as const } };
+  const catAlt = useContent<{ cat: string; room: string }>("clinic.alt");
 
   return (
     <>
