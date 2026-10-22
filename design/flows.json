@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Book an appointment",
+    "steps": [
+      { "action": "open", "path": "/" },
+      { "action": "click", "selector": "[data-testid='nav-book']" },
+      { "action": "click", "selector": "[data-testid='service-s-consult']" },
+      { "action": "click", "selector": "[data-testid='vet-v-linh']" },
+      { "action": "click", "selector": "[data-testid='day-0']" },
+      { "action": "click", "selector": "[data-testid='slot-0']" },
+      { "action": "type", "selector": "#pet-name", "value": "Mochi" },
+      { "action": "click", "selector": "[data-testid='confirm-booking']" },
+      { "action": "expect", "selector": "[data-testid='booking-confirmed']", "text": "Booking confirmed" }
+    ]
+  },
+  {
+    "name": "See what a visit costs before picking a time",
+    "steps": [
+      { "action": "open", "path": "/" },
+      { "action": "click", "selector": "[data-testid='nav-services']" },
+      { "action": "expect", "selector": "[data-testid='service-price-s-dental']", "text": "1.800.000" }
+    ]
+  },
+  {
+    "name": "Find when the next vaccination is due",
+    "auth": true,
+    "steps": [
+      { "action": "open", "path": "/account" },
+      { "action": "click", "selector": "[data-testid='pet-p-mochi']" },
+      { "action": "expect", "selector": "[data-testid='next-due']", "text": "Rabies" }
+    ]
+  },
+  {
+    "name": "The desk finds a patient on the day's list",
+    "auth": true,
+    "steps": [
+      { "action": "open", "path": "/admin" },
+      { "action": "type", "selector": "#admin-search", "value": "Mochi" },
+      { "action": "expect", "selector": "[data-testid='admin-row-a-1042']", "text": "Mochi" }
+    ]
+  },
+  {
+    "name": "Find the clinic and its hours",
+    "steps": [
+      { "action": "open", "path": "/" },
+      { "action": "click", "selector": "[data-testid='nav-contact']" },
+      { "action": "expect", "selector": "[data-testid='opening-hours']", "text": "8:00" }
+    ]
+  }
+]
