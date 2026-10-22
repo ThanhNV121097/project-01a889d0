@@ -46,6 +46,10 @@ function PetBody() {
   const due = nextDue(vaccinations, pet.id);
   const late = due ? isOverdue(due.due) : false;
   const vetName = (vid: string) => vets.find((v) => v.id === vid)?.name ?? "";
+  const serviceName = (sid: string) => services.find((s) => s.id === sid)?.name ?? "";
+  const visits = appointments
+    .filter((a) => a.pet === pet.id && a.status === "done")
+    .sort((a, b) => b.date.localeCompare(a.date));
 
   return (
     <>
