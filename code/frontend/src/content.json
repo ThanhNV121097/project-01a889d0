@@ -53,7 +53,8 @@
       "sub": "Sign in and your pets, their weights, their vaccination history and what is due next are on one page.",
       "cta": { "label": "Create an account", "href": "/register" }
     },
-    "vets": { "label": "The vets", "heading": "Two vets, and what each is for" }
+    "vets": { "label": "The vets", "heading": "Two vets, and what each is for" },
+    "alt": { "cat": "A cat waiting to be seen at the clinic" }
   },
   "services": {
     "title": "Services and prices",
