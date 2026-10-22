@@ -57,7 +57,7 @@ export default function Register() {
           <img src="/images/exam-room.jpg" alt={alt} className="h-[240px] w-full rounded-[var(--radius)] object-cover" width={1280} height={1024} />
           <ul className="mt-5 border-t border-line">
             <li className="flex items-start gap-3 border-b border-line py-3">
-              <Icon name="people" size={18} className="mt-1 text-accent" />
+              <Icon name="people" size={18} className="mt-1 text-ink-soft" />
               <T k="register.gives.pets" as="span" className="text-ink-soft" />
             </li>
             <li className="flex items-start gap-3 border-b border-line py-3">
