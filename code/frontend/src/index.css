@@ -10,6 +10,28 @@ img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; text-decoration: none; }
 p { margin: 0; }
 
+/* The load moment: the booking panel settles up into the photograph band
+   once, in half a second, and then stays exactly where it is. */
+@keyframes load-settle {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+.load-settle { animation: load-settle 500ms var(--ease-out) both; }
+
+/* Focus is visible and it is the accent, nowhere else. */
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .load-settle { animation: none; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 /* A floating ContactDock never covers the end of the page: below 1024px,
    while it is shown, the page keeps --dock-space clear at its foot. */
 @media (max-width: 1023px) {
