@@ -126,7 +126,7 @@ export default function Home() {
               <Icon name="arrow" size={18} />
             </Link>
           </div>
-          <img src="/images/cat-portrait.jpg" alt={catAlt.cat} className="h-[260px] w-full rounded-[var(--radius)] object-cover" width={861} height={1280} />
+          <img src="/images/cat-portrait.jpg" alt={homeAlt.cat} className="h-[260px] w-full rounded-[var(--radius)] object-cover" width={861} height={1280} />
         </div>
       </Section>
     </>
