@@ -11,7 +11,11 @@ import Icon from "../components/Icon";
 export default function BookingConfirmed() {
   usePageMeta("booking.title");
   const { id } = useParams();
-  const booking = getBooking(id);
+  const demo = useDemo();
+  const made = getBooking(id);
+  // A confirmation only exists after a visitor has booked. While the design
+  // is being looked at, show a representative one so the page can be judged.
+  const booking = made ?? (demo ? EXAMPLE : null);
   const labels = useContent<{ reference: string; service: string; vet: string; when: string; price: string }>("booking");
   if (!booking) {
     return (
