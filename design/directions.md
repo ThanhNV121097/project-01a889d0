@@ -29,7 +29,7 @@ price list than with a mood.
 
 ---
 
-## 2. A quiet room for a frightened cat
+## Direction 2 — A quiet room for a frightened cat
 
 **Colours** `#14110F` ground · `#1D1916` surface · `#F2EBE3` ink · `#A3988C`
 ink-soft · `#E8A33D` accent · `#14110F` accent-ink
