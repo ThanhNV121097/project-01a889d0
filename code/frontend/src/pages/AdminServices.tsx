@@ -27,7 +27,7 @@ function Body() {
   function save(id: string) {
     const price = Number(value);
     if (Number.isFinite(price) && price > 0) {
-      setCollection("services", items.map((s) => (s.id === id ? { ...s, price } : s)) as unknown as Service[] as never);
+      setCollection("services", items.map((s) => (s.id === id ? { ...s, price } : s)) as unknown as Row[]);
     }
     setEditing("");
   }
