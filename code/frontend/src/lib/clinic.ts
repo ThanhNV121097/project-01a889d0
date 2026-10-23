@@ -140,6 +140,24 @@ export function slotsFor(service: Service | undefined, date: Date): Slot[] {
   return out;
 }
 
+/** The day a picker's ISO value stands for, or null while none is chosen. */
+export function dayFromIso(iso: string): Date | null {
+  if (!iso) return null;
+  const [y, m, d] = iso.split("-").map(Number);
+  if (!y || !m || !d) return null;
+  return new Date(y, m - 1, d);
+}
+
+/**
+ * What a chosen slot reads as: a timed slot is its own clock reading, a
+ * half-day block takes the clinic's words from content.json.
+ */
+export function slotLabelOf(slot: Slot | undefined, half: Record<string, string>): string {
+  if (!slot) return "";
+  if (slot.labelKey) return half[slot.id] ?? "";
+  return slot.time;
+}
+
 /** A due date already past: the row the clinic filters on. */
 export function isOverdue(due: string, today: Date = new Date()): boolean {
   if (!due) return false;
