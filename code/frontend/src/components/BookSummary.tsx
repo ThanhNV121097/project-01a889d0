@@ -24,7 +24,7 @@ export default function BookSummary({
   onConfirm: () => void;
 }) {
   const labels = useContent<{ service: string; vet: string; when: string; price: string }>("booking");
-  const none = useContent("book.none.value");
+  const none = useContent("book.notChosen");
   const when = whenLine(date, slotLabel, none);
   const headClass = "text-[length:var(--size-label)] uppercase tracking-[var(--tracking-label)] text-ink-soft";
   return (
