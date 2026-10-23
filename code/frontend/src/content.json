@@ -86,7 +86,7 @@
     "confirm": "Confirm booking",
     "pick": "Choose a service to see the times.",
     "none": "No times left on this day. Try another.",
-    "notChosen": "Not chosen yet"
+    "notChosen": "—"
   },
   "booking": {
     "title": "Booking confirmed",
