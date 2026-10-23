@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "path": "/images/cat-portrait.jpg",
+    "author": "jackypotter",
+    "source": "Pixabay",
+    "license": "Pixabay Content License",
+    "page": "https://pixabay.com/photos/cat-pet-animal-domestic-cat-feline-169095/"
+  },
+  {
+    "path": "/images/ear-check.jpg",
+    "author": "mirkosajkov",
+    "source": "Pixabay",
+    "license": "Pixabay Content License",
+    "page": "https://pixabay.com/photos/medicine-veterinary-equipment-5003631/"
+  },
+  {
+    "path": "/images/exam-room.jpg",
+    "author": "12019",
+    "source": "Pixabay",
+    "license": "Pixabay Content License",
+    "page": "https://pixabay.com/photos/veterinary-clinic-veterinarian-dog-85925/"
+  },
+  {
+    "path": "/images/puppy-check.jpg",
+    "author": "12019",
+    "source": "Pixabay",
+    "license": "Pixabay Content License",
+    "page": "https://pixabay.com/photos/dog-puppy-canine-vet-veterinarian-91765/"
+  }
+]

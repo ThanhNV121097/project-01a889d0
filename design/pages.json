@@ -1,0 +1,16 @@
+[
+  { "path": "/", "name": "Home" },
+  { "path": "/services", "name": "Services and prices" },
+  { "path": "/book", "name": "Book an appointment" },
+  { "path": "/booking/:id", "name": "Booking confirmed", "example": "/booking/a-1042" },
+  { "path": "/signin", "name": "Sign in" },
+  { "path": "/register", "name": "Create an account" },
+  { "path": "/account", "name": "Your pets", "auth": true },
+  { "path": "/account/pets/:id", "name": "Pet record", "example": "/account/pets/p-mochi", "auth": true },
+  { "path": "/clinic", "name": "The clinic" },
+  { "path": "/contact", "name": "Contact" },
+  { "path": "/admin", "name": "The day's list", "auth": true },
+  { "path": "/admin/patients", "name": "Patients", "auth": true },
+  { "path": "/admin/services", "name": "Services and prices (staff)", "auth": true },
+  { "path": "/admin/hours", "name": "The vets' hours", "auth": true }
+]
