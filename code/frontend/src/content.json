@@ -85,7 +85,8 @@
     "halfDay": "A half day — the desk will agree the hour with you",
     "confirm": "Confirm booking",
     "pick": "Choose a service to see the times.",
-    "none": "No times left on this day. Try another."
+    "none": "No times left on this day. Try another.",
+    "notChosen": "Not chosen yet"
   },
   "booking": {
     "title": "Booking confirmed",
